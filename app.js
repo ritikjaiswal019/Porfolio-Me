@@ -42,8 +42,6 @@ window.addEventListener("scroll", function () {
   // setup back to top link
 
   if (scrollHeight > 500) {
-    console.log("helo");
-
     topLink.classList.add("show-link");
   } else {
     topLink.classList.remove("show-link");
@@ -94,5 +92,30 @@ function loadHome() {
 }
 
 window.addEventListener("DOMContentLoaded", function(){
+  // loadHome();
   setTimeout(loadHome, 2000);
+  const losobjects = document.querySelectorAll('.loadOnScroll');
+  const navHeight = document.querySelector('nav').offsetHeight;
+  console.log(navHeight)
+  window.addEventListener('scroll', function(){
+    const currentHeight = window.pageYOffset;
+    console.log("Printing\n");
+    Array.from(losobjects).forEach((e)=>{
+      console.log(e.getBoundingClientRect().top - window.innerHeight);
+      console.log(e.getBoundingClientRect().bottom - navHeight);
+      const top = e.getBoundingClientRect().top - window.innerHeight;
+      const bottom = e.getBoundingClientRect().bottom - navHeight;
+      if( top*bottom < 0){
+          e.classList.add('show');
+          e.classList.add('translate0px');
+      }
+      else{
+          e.classList.remove('translate0px');
+          e.classList.remove('show');
+      }
+    })
+  })
 });
+
+function loadonscroll(){
+}

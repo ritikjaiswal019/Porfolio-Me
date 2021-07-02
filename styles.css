@@ -4,6 +4,7 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 /*
 =============== 
@@ -63,6 +64,9 @@ Global Styles
 .full-height{
   height: 100vh !important;
 }
+.font-amatic{
+  font-family: Amatic SC !important;
+}
 .wavy {
   position: relative;
   -webkit-box-reflect: below -10px linear-gradient(transparent, rgb(135, 206, 250, 0.7));
@@ -103,6 +107,10 @@ Global Styles
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
+}
+body{
+  overflow-x: hidden;
 }
 *,
 ::after,
@@ -235,6 +243,26 @@ p {
     width: 95vw;
   }
 }
+.center-img{
+  text-align: -webkit-center;
+}
+.square-250{
+  width: 250px !important;
+  height: 250px !important;
+}
+.rounded-25{
+  border-radius: 40px;
+}
+.translate-100px{
+  transform: translate(-100px,0);
+}
+.translate100px{
+  transform: translate(100px,0);
+}
+.translate0px{
+  transform: translate(0px,0px);
+  transition: 1s all;
+}
 main {
   min-height: 100vh;
   display: grid;
@@ -249,6 +277,7 @@ Scroll
 nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
+  z-index: 1;
 }
 /* fixed nav */
 .fixed-nav {
@@ -424,9 +453,16 @@ header {
 .title span {
   color: var(--clr-secondary);
 }
-#about,
-#services,
-#tours {
+#about
+{
+  height: 80vh;
+}
+/* #services
+{
+  height: 80vh;
+} */
+#tours 
+{
   height: 80vh;
 }
 #services {
