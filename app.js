@@ -93,4 +93,6 @@ function loadHome() {
 
 }
 
-window.addEventListener("DOMContentLoaded", setTimeout(loadHome, 2000));
+window.addEventListener("DOMContentLoaded", function(){
+  setTimeout(loadHome, 2000);
+});
