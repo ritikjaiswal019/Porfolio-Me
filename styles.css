@@ -59,6 +59,48 @@ Variables
 Global Styles
 ===============
 */
+
+.full-height{
+  height: 100vh !important;
+}
+.wavy {
+  position: relative;
+  -webkit-box-reflect: below -10px linear-gradient(transparent, rgb(135, 206, 250, 0.7));
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5em;
+  color:var(--clr-grey-1);
+  animation: wave 1s ease-in-out infinite;
+  animation-delay: calc(0.05s*var(--i));
+}
+
+@keyframes wave {
+  0% {
+      transform: translatey(0px);
+  }
+  20% {
+      transform: translatey(-40px);
+  }
+  40%,
+  100% {
+      transform: translatey(0px);
+  }
+}
+
+@keyframes loadhome {
+  from {
+      bottom: -300px;
+      opacity: 0;
+  }
+  to {
+      bottom: 0px;
+      opacity: 1;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

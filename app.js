@@ -82,3 +82,15 @@ scrollLinks.forEach((link) => {
   });
 });
 // calculate heights
+
+function loadPage() {
+  var t = setTimeout(loadHome, 1000);
+}
+
+function loadHome() {
+  document.getElementById("main").classList.remove('d-none');
+  document.getElementById("loader").classList.add('d-none');
+
+}
+
+window.addEventListener("DOMContentLoaded", setTimeout(loadHome, 2000));

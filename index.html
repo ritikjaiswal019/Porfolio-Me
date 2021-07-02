@@ -16,126 +16,150 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header id="home">
-      <!-- navbar -->
-      <nav id="nav">
-        <div class="nav-center">
-          <!-- nav header -->
-          <div class="nav-header">
-            <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
-            <button class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </button>
+    <div id="loader" class="loader text-center row full-height">
+      <div class="wavy col align-self-center">
+        <span style="--i:1">R</span>
+            <span style="--i:2">I</span>
+            <span style="--i:3">T</span>
+            <span style="--i:4">I</span>
+            <span style="--i:5">K</span>
+            <span style="--i:6"> </span>
+            <span style="--i:7">J</span>
+            <span style="--i:8">A</span>
+            <span style="--i:9">I</span>
+            <span style="--i:10">S</span>
+            <span style="--i:11">W</span>
+            <span style="--i:12">A</span>
+            <span style="--i:13">L</span>
+            <span style="--i:14">.</span>
+            <span style="--i:15">.</span>
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+      </div>
+    </div>
+    <div id="main" class="main hide d-none">
+      <header id="home">
+        <!-- navbar -->
+        <nav id="nav">
+          <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+              <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- links -->
+            <div class="links-container">
+              <ul class="links">
+                <li>
+                  <a href="#home" class="scroll-link">About Me</a>
+                </li>
+                <li>
+                  <a href="#about" class="scroll-link">Skills</a>
+                </li>
+                <li>
+                  <a href="#services" class="scroll-link">Education</a>
+                </li>
+                <li>
+                  <a href="#tours" class="scroll-link">Contact Me</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <!-- links -->
-          <div class="links-container">
-            <ul class="links">
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+          <div class="container">
+            <h3 class="tagline">Hey There! I'm </h3>
+            <h1 class="name">Ritik Jaiswal</h1>
+            <div class="line"><div></div></div>
+            <!-- <h4 class="tagline">The worst coder</h4> -->
+            <p>
+              I'm a Computer Science UnderGraduate at Medi-Caps University.<br>
+              I love doing competitive programming and problems solving. Other than coding, I love listening music.
+            </p>
+            <!-- <a href="#tours" class="scroll-link btn btn-white">explore tours</a> -->
+            <!-- social media -->
+            <ul class="social-icons">
+              <!-- <li>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li> -->
               <li>
-                <a href="#home" class="scroll-link">About Me</a>
+                <a href="https://www.instagram.com/ritik_jaiswal_19/">
+                  <i class="fab fa-instagram"></i>
+                </a>
               </li>
               <li>
-                <a href="#about" class="scroll-link">Skills</a>
+                <a href="https://github.com/ritikjaiswal019 ">
+                  <i class="fab fa-github"></i>
+                </a>
               </li>
               <li>
-                <a href="#services" class="scroll-link">Education</a>
+                <a href="https://www.linkedin.com/in/jaiswal-ritik/">
+                  <i class="fab fa-linkedin"></i>
+                </a>
               </li>
-              <li>
-                <a href="#tours" class="scroll-link">Contact Me</a>
-              </li>
+              <!-- <li>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-sketch"></i>
+                </a> 
+              </li> -->
             </ul>
           </div>
         </div>
-      </nav>
-      <!-- banner -->
-      <div class="banner">
-        <div class="container">
-          <h3 class="tagline">Hey There! I'm </h3>
-          <h1 class="name">Ritik Jaiswal</h1>
-          <div class="line"><div></div></div>
-          <!-- <h4 class="tagline">The worst coder</h4> -->
-          <p>
-            I'm a Computer Science UnderGraduate at Medi-Caps University.<br>
-            I love doing competitive programming and problems solving. Other than coding, I love listening music.
-          </p>
-          <!-- <a href="#tours" class="scroll-link btn btn-white">explore tours</a> -->
-          <!-- social media -->
-          <ul class="social-icons">
-            <!-- <li>
-              <a href="https://www.twitter.com">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li> -->
-            <li>
-              <a href="https://www.instagram.com/ritik_jaiswal_19/">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/ritikjaiswal019 ">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/jaiswal-ritik/">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <!-- <li>
-              <a href="https://www.twitter.com">
-                <i class="fab fa-sketch"></i>
-              </a> 
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </header>
-    <!-- about -->
-    <section id="about" class="section">
-      <div class="title">
-        <h2>My <span>Skills</span></h2>
-        <div class="allskills">
-          <div>
-            <h4>Frameworks</h4>
-            <li>Django</li>
-            <li>Git</li>
-            <li>Bootstrap</li>
+      </header>
+      <!-- about -->
+      <section id="about" class="section">
+        <div class="title">
+          <h2>My <span>Skills</span></h2>
+          <div class="allskills">
+            <div>
+              <h4>Frameworks</h4>
+              <li>Django</li>
+              <li>Git</li>
+              <li>Bootstrap</li>
+            </div>
+            <div>
+              <h4>Languages</h4>
+              <li>C Programming</li>
+              <li>C++ Programming</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JS</li>
+            </div>
           </div>
-          <div>
-            <h4>Languages</h4>
-            <li>C Programming</li>
-            <li>C++ Programming</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JS</li>
-          </div>
+          
         </div>
-        
-      </div>
-    </section>
-    <!-- services -->
-    <section id="services" class="section">
-      <div class="title">
-        <h2>My <span>Education</span></h2>
-      </div>
-    </section>
-    <!-- contact -->
-    <section id="tours" class="section">
-      <div class="title">
-        <h2>Contact<span>Me</span></h2>
-      </div>
-    </section>
-    <!-- footer --> 
-    <footer class="section">
-      <p>
-        Made by Ritik Jaiswal<br>
-        all rights reserved &copy; <span id="date"></span>.
-      </p>
-    </footer>
-    <a class="scroll-link top-link" href="#home">
-      <i class="fas fa-arrow-up"></i>
-    </a>
+      </section>
+      <!-- services -->
+      <section id="services" class="section">
+        <div class="title">
+          <h2>My <span>Education</span></h2>
+        </div>
+      </section>
+      <!-- contact -->
+      <section id="tours" class="section">
+        <div class="title">
+          <h2>Contact<span>Me</span></h2>
+        </div>
+      </section>
+      <!-- footer --> 
+      <footer class="section">
+        <p>
+          Made by Ritik Jaiswal<br>
+          all rights reserved &copy; <span id="date"></span>.
+        </p>
+      </footer>
+      <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
     <!-- javascript -->
     <script src="app.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
