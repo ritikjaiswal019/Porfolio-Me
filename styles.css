@@ -165,7 +165,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
   h1 {
     font-size: 4rem;
   }
@@ -247,8 +247,10 @@ p {
   text-align: -webkit-center;
 }
 .square-250{
-  width: 250px !important;
-  height: 250px !important;
+  width: 100%;
+  height: 100%;
+  max-width: 175px !important;
+  max-height: 175px !important;
 }
 .rounded-25{
   border-radius: 40px;
@@ -338,7 +340,7 @@ nav {
 .links a:hover {
   color: var(--clr-grey-1);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
   nav {
     background: transparent;
   }
@@ -352,6 +354,10 @@ nav {
   }
   .nav-header {
     padding: 0;
+  }
+  .nav-header h2{
+    color: white !important;
+    font-weight: normal !important;
   }
   .nav-toggle {
     display: none;
