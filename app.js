@@ -92,8 +92,8 @@ function loadHome() {
 }
 
 window.addEventListener("DOMContentLoaded", function(){
-  // loadHome();
-  setTimeout(loadHome, 2000);
+  loadHome();
+  // setTimeout(loadHome, 2000);
   const losobjects = document.querySelectorAll('.loadOnScroll');
   const navHeight = document.querySelector('nav').offsetHeight;
   window.addEventListener('scroll', function(){

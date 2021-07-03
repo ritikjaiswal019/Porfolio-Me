@@ -467,7 +467,11 @@ header {
 {
   height: 80vh;
 } */
-#tours 
+#contact 
+{
+  height: 80vh;
+}
+#projects 
 {
   height: 80vh;
 }
@@ -517,4 +521,98 @@ footer p {
   100% {
     transform: scale(1);
   }
+}
+
+.allprojects{
+
+}
+
+.cards {
+  margin: auto;
+  width: 200px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+}
+
+.rotate {
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotar 10s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.rotate:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.rotate .card {
+  width: 300px;
+  height: auto;
+  border: 1px solid #c1c8e4;
+  overflow: hidden;
+  position: absolute;
+}
+
+.rotate .card:nth-child(1) {
+  transform: rotateY(0deg) translateZ(250px);
+}
+
+.rotate .card:nth-child(2) {
+  transform: rotateY(90deg) translateZ(250px);
+}
+
+.rotate .card:nth-child(3) {
+  transform: rotateY(180deg) translateZ(250px);
+}
+
+.rotate .card:nth-child(4) {
+  transform: rotateY(270deg) translateZ(250px);
+}
+
+.card {
+  position: absolute;
+  box-shadow: 0px 0px 20px 0 grey;
+  transition: all 0.3s;
+}
+
+.card-des {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 50%;
+  background-color: white;
+  color: indigo;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0.1rem 0.1rem 0.3rem indigo;
+  z-index: 100;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card :hover {
+  /* transform: scale(1.4); */
+  transition: all 0.3s;
+}
+
+@keyframes rotar {
+  0% {
+      transform: rotateY(0deg);
+      /* opacity: 0; */
+  }
+  50%{
+      transform: rotateY(180deg);
+      /* opacity: 1; */
+  }
+  100%{
+      transform: rotateY(360deg);
+      /* opacity: 0; */
+  }
+}
+
+.card-content {
+  margin-top: 20rem;
 }
