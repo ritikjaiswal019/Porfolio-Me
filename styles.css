@@ -108,6 +108,8 @@ Global Styles
 html {
   scroll-behavior: smooth;
   width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
 }
 body{
   overflow-x: hidden;
@@ -557,19 +559,19 @@ footer p {
 }
 
 .rotate .card:nth-child(1) {
-  transform: rotateY(0deg) translateZ(100px);
+  transform: rotateY(0deg) translateZ(200px);
 }
 
 .rotate .card:nth-child(2) {
-  transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(200px);
 }
 
 .rotate .card:nth-child(3) {
-  transform: rotateY(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(200px);
 }
 
 .rotate .card:nth-child(4) {
-  transform: rotateY(270deg) translateZ(100px);
+  transform: rotateY(270deg) translateZ(200px);
 }
 
 .card {
