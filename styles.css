@@ -12,6 +12,7 @@ Variables
 ===============
 */
 
+
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
@@ -473,10 +474,10 @@ header {
 {
   height: 80vh;
 }
-#projects 
+/* #projects 
 {
   height: 80vh;
-}
+} */
 #services {
   background: var(--clr-white);
 }
@@ -525,8 +526,9 @@ footer p {
   }
 }
 
-.allprojects{
-
+.hide {
+  display: none;
+  transition: 5s ease-in-out;
 }
 
 .cards {
@@ -600,6 +602,10 @@ footer p {
   transition: all 0.3s;
 }
 
+.pause-animation{
+  animation-play-state: paused !important;
+}
+
 @keyframes rotar {
   0% {
       transform: rotateY(0deg);
@@ -618,3 +624,13 @@ footer p {
 .card-content {
   margin-top: 20rem;
 }
+
+.allprojects{
+  min-height: 400px;
+}
+
+.projectcard-desc{
+  padding: 1rem;
+  width: 70%;
+  min-width: 300px;
+} 

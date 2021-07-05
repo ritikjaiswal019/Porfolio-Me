@@ -91,9 +91,43 @@ function loadHome() {
 
 }
 
+let currentlyActiveProject;
+const allrocards = document.querySelectorAll('.rotating-cards');
+
+function playPauseAnimations(){
+  // console.log(allrocards[0].parentElement.classList.toggle('.pause-animation'));
+  allrocards[0].parentElement.classList.toggle('pause-animation')
+}
+
+function toggleProjects(ProjectDesc){
+  if(currentlyActiveProject==undefined){
+    currentlyActiveProject = ProjectDesc;  
+    currentlyActiveProject.classList.remove('d-none');
+    
+  }
+  else if(currentlyActiveProject === ProjectDesc){
+    currentlyActiveProject.classList.add('d-none');
+    currentlyActiveProject = undefined;
+  }
+  else{
+    currentlyActiveProject.classList.add('d-none');
+    currentlyActiveProject = ProjectDesc;
+    currentlyActiveProject.classList.remove('d-none');
+  }
+  playPauseAnimations();
+}
+
 window.addEventListener("DOMContentLoaded", function(){
-//   loadHome();
-  setTimeout(loadHome, 2000);
+  loadHome();
+  // setTimeout(loadHome, 2000);
+
+  Array.from(allrocards).forEach((e)=>{
+    e.addEventListener('click',()=>{
+      const getItsDesc = document.getElementById(`dex-${e.dataset.toggle}`);
+      toggleProjects(getItsDesc);
+    })
+  })
+
   const losobjects = document.querySelectorAll('.loadOnScroll');
   const navHeight = document.querySelector('nav').offsetHeight;
   window.addEventListener('scroll', function(){

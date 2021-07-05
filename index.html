@@ -1,228 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ritik Jaiswal</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/agustina" rel="stylesheet">
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="loader" class="loader text-center row full-height">
-      <div class="wavy col align-self-center">
-        <span style="--i:1">R</span>
-            <span style="--i:2">I</span>
-            <span style="--i:3">T</span>
-            <span style="--i:4">I</span>
-            <span style="--i:5">K</span>
-            <span style="--i:6"> </span>
-            <span style="--i:7">J</span>
-            <span style="--i:8">A</span>
-            <span style="--i:9">I</span>
-            <span style="--i:10">S</span>
-            <span style="--i:11">W</span>
-            <span style="--i:12">A</span>
-            <span style="--i:13">L</span>
-            <span style="--i:14">.</span>
-            <span style="--i:15">.</span>
-            <div class="spinner-border" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritik Jaiswal</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/agustina" rel="stylesheet">
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="loader" class="loader text-center row full-height">
+    <div class="wavy col align-self-center">
+      <span style="--i:1">R</span>
+      <span style="--i:2">I</span>
+      <span style="--i:3">T</span>
+      <span style="--i:4">I</span>
+      <span style="--i:5">K</span>
+      <span style="--i:6"> </span>
+      <span style="--i:7">J</span>
+      <span style="--i:8">A</span>
+      <span style="--i:9">I</span>
+      <span style="--i:10">S</span>
+      <span style="--i:11">W</span>
+      <span style="--i:12">A</span>
+      <span style="--i:13">L</span>
+      <span style="--i:14">.</span>
+      <span style="--i:15">.</span>
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
       </div>
     </div>
-    <div id="main" class="main hide d-none">
-      <header id="home">
-        <!-- navbar -->
-        <nav id="nav">
-          <div class="nav-center">
-            <!-- nav header -->
-            <div class="nav-header">
-              <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
-              <h2 class="font-amatic text-dark fw-bold">Ritik Jaiswal</h2>
-              <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-              </button>
-            </div>
-            <!-- links -->
-            <div class="links-container">
-              <ul class="links">
-                <li>
-                  <a href="#home" class="scroll-link">About Me</a>
-                </li>
-                <li>
-                  <a href="#projects" class="scroll-link">Projects</a>
-                </li>
-                <li>
-                  <a href="#education" class="scroll-link">Education</a>
-                </li>
-                <li>
-                  <a href="#contact" class="scroll-link">Contact Me</a>
-                </li>
-                <!-- <li>
+  </div>
+  <div id="main" class="main d-none">
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
+            <h2 class="font-amatic text-dark fw-bold">Ritik Jaiswal</h2>
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">About Me</a>
+              </li>
+              <li>
+                <a href="#projects" class="scroll-link">Projects</a>
+              </li>
+              <li>
+                <a href="#education" class="scroll-link">Education</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll-link">Contact Me</a>
+              </li>
+              <!-- <li>
                   <a href="" class="scroll-link">Resume Me</a>
                 </li> -->
-              </ul>
-            </div>
+            </ul>
           </div>
-        </nav>
-        <!-- banner -->
-        <div class="banner">
-          <div class="container">
-            <h3 class="tagline">Hey There! I'm </h3>
-            <h1 class="name">Ritik Jaiswal</h1>
-            <div class="line"><div></div></div>
-            <!-- <h4 class="tagline">The worst coder</h4> -->
-            <p>
-              I'm a Computer Science UnderGraduate at Medi-Caps University.<br>
-              I love doing competitive programming and problems solving. Other than coding, I love listening music.
-            </p>
-            <!-- <a href="#tours" class="scroll-link btn btn-white">explore tours</a> -->
-            <!-- social media -->
-            <ul class="social-icons">
-              <!-- <li>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h3 class="tagline">Hey There! I'm </h3>
+          <h1 class="name">Ritik Jaiswal</h1>
+          <div class="line">
+            <div></div>
+          </div>
+          <!-- <h4 class="tagline">The worst coder</h4> -->
+          <p>
+            I'm a Computer Science UnderGraduate at Medi-Caps University.<br>
+            I love doing competitive programming and problems solving. Other than coding, I love listening music.
+          </p>
+          <!-- <a href="#tours" class="scroll-link btn btn-white">explore tours</a> -->
+          <!-- social media -->
+          <ul class="social-icons">
+            <!-- <li>
                 <a href="https://www.twitter.com">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li> -->
-              <li>
-                <a href="https://www.instagram.com/ritikjaiswal_19/">
-                  <i class="fab fa-instagram fs-3"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/ritikjaiswal019 ">
-                  <i class="fab fa-github fs-3"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/jaiswal-ritik/">
-                  <i class="fab fa-linkedin fs-3"></i>
-                </a>
-              </li>
-              <!-- <li>
+            <li>
+              <a href="https://www.instagram.com/ritikjaiswal_19/">
+                <i class="fab fa-instagram fs-3"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ritikjaiswal019 ">
+                <i class="fab fa-github fs-3"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jaiswal-ritik/">
+                <i class="fab fa-linkedin fs-3"></i>
+              </a>
+            </li>
+            <!-- <li>
                 <a href="https://www.twitter.com">
                   <i class="fab fa-sketch"></i>
                 </a> 
               </li> -->
-            </ul>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Projects -->
+    <section id="projects" class="section justify-content-center">
+      <div class="title">
+        <h2>My <span>Projects</span></h2>
+      </div>
+      <div class="allprojects justify-content-center cards">
+        <div class="rotate" id="rocards">
+          <div class="card rotating-cards" data-toggle="1" id="c1"><img src="imgs/PortFolio.png" alt="covid aid"></div>
+          <div class="card rotating-cards" data-toggle="2" id="c2"><img src="imgs/CodeTogether.png" alt="agrosia overseas"></div>
+          <div class="card rotating-cards" data-toggle="3" id="c3"><img src="imgs/coivd.png" alt="college management"></div>
+          <div class="card rotating-cards" data-toggle="4" id="c4"><img src="imgs/ComeLetsShare.png" alt="curated cuisines"></div>
+        </div>
+      </div>
+      <div class="container-md d-flex justify-content-center">
+        <div class="projectcard-desc shadow my-2 d-none" id="dex-4">
+          <div class="projectcard-body">
+            <h4 class="text-center fs-5">ComeLetsShare</h4>
+            <h4 class="text-center fs-5">( NGO Website )</h4>
+            <h6 class="text-center">Status : Completed</h6>
+            <h6 class="text-center">HTML | CSS | JS  </h6>
+            <h6 class="text-center">SQLite | Bootstrap | Django</h6>
           </div>
         </div>
-      </header>
-      <!-- Projects -->
-      <section id="projects" class="section justify-content-center">
-        <div class="title">
-          <h2>My <span>Projects</span></h2>
-        </div>
-        <div class="allprojects justify-content-center cards">
-          <div class="rotate" id="rocards">
-            <div class="card" id="c1"><img src="imgs/PortFolio.png" alt="covid aid"></div>
-            <div class="card" id="c2"><img src="imgs/CodeTogether.png" alt="agrosia overseas"></div>
-            <div class="card" id="c3"><img src="imgs/coivd.png" alt="college management"></div>
-            <div class="card" id="c4"><img src="imgs/ComeLetsShare.png" alt="curated cuisines"></div>
+        <div class="projectcard-desc shadow my-2 d-none" id="dex-2">
+          <div class="projectcard-body">
+            <h4 class="text-center fs-5">Code Together</h4>
+            <h4 class="text-center fs-5">( Blog Website )</h4>
+            <h6 class="text-center">Status : Ongoing</h6>
+            <h6 class="text-center">HTML | CSS | JS | Django </h6>
+            <h6 class="text-center">SQLite | AJAX | JSON | Bootstrap</h6>
           </div>
         </div>
-      </section>
-      <!-- education -->
-      <section id="education" class="section px-5 pb-4">
-        <div class="title">
-          <h2>My <span>Education</span></h2>
-        </div>
-        <div class="container-lg my-5 rounded-25 border py-5 shadow fade translate-100px loadOnScroll">
-          <div class="row px-5">
-            <div class="col-md-6 center-img">
-              <img src="./imgs/graduation.png" alt="" class="square-250">
-            </div>
-            <div class="col-md-6">
-              <div class="fs-3 fw-4 education-title mb-2">Graduation</div>
-              <div class="education-content">
-                <div class="mb-0">
-                  <h5 class="mb-1">Medi-Caps University</h5>
-                  <em>2019-23</em>
-                </div>
-                <div class="">
-                  B.Tech. In Computer Science
-                </div>
-              </div>
-            </div>
+        <div class="projectcard-desc shadow my-2 d-none" id="dex-5">
+          <div class="projectcard-body">
+            <h4 class="text-center fs-5">Attendance Manager</h4>
+            <h4 class="text-center fs-5">( Attendace APP )</h4>
+            <h6 class="text-center">Status : Ongoing</h6>
+            <h6 class="text-center">HTML | CSS | JS </h6>
           </div>
         </div>
-        <div class="container-lg my-5 rounded-25 border py-5 shadow fade translate100px loadOnScroll">
-          <div class="row px-5">
-            <div class="col-md-6 center-img">
-              <img src="./imgs/school.png" alt="" class="square-250">
-            </div>
-            <div class="col-md-6">
-              <div class="fs-3 fw-4 education-title mb-2">Class XII</div>
-              <div class="education-content">
-                <div class="mb-0">
-                  <h5 class="mb-1">New Digamber Public School</h5>
-                  <em>2019</em>
-                </div>
-                <div class="">
-                  PCM | CBSE Board
-                </div>
-              </div>
-            </div>
+        <div class="projectcard-desc shadow my-2 d-none" id="dex-3">
+          <div class="projectcard-body">
+            <h4 class="text-center fs-5">Covid Help</h4>
+            <h4 class="text-center fs-5">( Covid Aid )</h4>
+            <h6 class="text-center">Status : Ongoing</h6>
+            <h6 class="text-center">HTML | CSS | JS | Django </h6>
+            <h6 class="text-center">SQLite | AJAX | JSON | Bootstrap</h6>
           </div>
         </div>
-        <div class="container-lg my-5 rounded-25 border py-5 shadow fade translate-100px loadOnScroll">
-          <div class="row px-5">
-            <div class="col-md-6 center-img">
-              <img src="./imgs/school.png" alt="" class="square-250">
-            </div>
-            <div class="col-md-6">
-              <div class="fs-3 fw-4 education-title mb-2">Class X</div>
-              <div class="education-content">
-                <div class="mb-0">
-                  <h5 class="mb-1">New Digamber Public School</h5>
-                  <em>2017</em>
-                </div>
-                <div class="">
-                  CBSE Board
-                </div>
-              </div>
-            </div>
+        <div class="projectcard-desc shadow my-2 d-none" id="dex-1">
+          <div class="projectcard-body">
+            <h4 class="text-center fs-5">Ritik Jaiswal</h4>
+            <h4 class="text-center fs-5">( PortFolio Website )</h4>
+            <h6 class="text-center">Status : Completed</h6>
+            <h6 class="text-center">HTML | CSS | JS </h6>
           </div>
         </div>
         
-      </section>
-      <!-- contact -->
-      <section id="contact" class="section">
-        <div class="title">
-          <h2>Contact<span>Me</span></h2>
+        
+        
+      </div>
+    </section>
+    <!-- education -->
+    <section id="education" class="section px-5 pb-4">
+      <div class="title">
+        <h2>My <span>Education</span></h2>
+      </div>
+      <div class="container-lg my-5 rounded-25 border py-5 shadow fade translate-100px loadOnScroll">
+        <div class="row px-5">
+          <div class="col-md-6 center-img">
+            <img src="./imgs/graduation.png" alt="" class="square-250">
+          </div>
+          <div class="col-md-6">
+            <div class="fs-3 fw-4 education-title mb-2">Graduation</div>
+            <div class="education-content">
+              <div class="mb-0">
+                <h5 class="mb-1">Medi-Caps University</h5>
+                <em>2019-23</em>
+              </div>
+              <div class="">
+                B.Tech. In Computer Science
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- footer --> 
-      <footer class="section">
-        <p>
-          Made by Ritik Jaiswal<br>
-          all rights reserved &copy; <span id="date"></span>.
-        </p>
-      </footer>
-      <a class="scroll-link top-link" href="#home">
-        <i class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-    <!-- javascript -->
-    <script src="app.js"></script>
-    <!-- Optional JavaScript; choose one of the two! -->
+      </div>
+      <div class="container-lg my-5 rounded-25 border py-5 shadow fade translate100px loadOnScroll">
+        <div class="row px-5">
+          <div class="col-md-6 center-img">
+            <img src="./imgs/school.png" alt="" class="square-250">
+          </div>
+          <div class="col-md-6">
+            <div class="fs-3 fw-4 education-title mb-2">Class XII</div>
+            <div class="education-content">
+              <div class="mb-0">
+                <h5 class="mb-1">New Digamber Public School</h5>
+                <em>2019</em>
+              </div>
+              <div class="">
+                PCM | CBSE Board
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg my-5 rounded-25 border py-5 shadow fade translate-100px loadOnScroll">
+        <div class="row px-5">
+          <div class="col-md-6 center-img">
+            <img src="./imgs/school.png" alt="" class="square-250">
+          </div>
+          <div class="col-md-6">
+            <div class="fs-3 fw-4 education-title mb-2">Class X</div>
+            <div class="education-content">
+              <div class="mb-0">
+                <h5 class="mb-1">New Digamber Public School</h5>
+                <em>2017</em>
+              </div>
+              <div class="">
+                CBSE Board
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="section">
+      <div class="title">
+        <h2>Contact<span>Me</span></h2>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        Made by Ritik Jaiswal<br>
+        all rights reserved &copy; <span id="date"></span>.
+      </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+  <!-- javascript -->
+  <script src="app.js"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
