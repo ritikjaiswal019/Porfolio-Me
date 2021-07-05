@@ -557,19 +557,19 @@ footer p {
 }
 
 .rotate .card:nth-child(1) {
-  transform: rotateY(0deg) translateZ(250px);
+  transform: rotateY(0deg) translateZ(100px);
 }
 
 .rotate .card:nth-child(2) {
-  transform: rotateY(90deg) translateZ(250px);
+  transform: rotateY(90deg) translateZ(100px);
 }
 
 .rotate .card:nth-child(3) {
-  transform: rotateY(180deg) translateZ(250px);
+  transform: rotateY(180deg) translateZ(100px);
 }
 
 .rotate .card:nth-child(4) {
-  transform: rotateY(270deg) translateZ(250px);
+  transform: rotateY(270deg) translateZ(100px);
 }
 
 .card {
