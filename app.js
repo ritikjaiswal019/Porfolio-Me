@@ -118,8 +118,8 @@ function toggleProjects(ProjectDesc){
 }
 
 window.addEventListener("DOMContentLoaded", function(){
-  // loadHome();
-  setTimeout(loadHome, 2000);
+  loadHome();
+  // setTimeout(loadHome, 2000);
   Array.from(allrocards).forEach((e)=>{
     e.addEventListener('click',()=>{
       const getItsDesc = document.getElementById(`dex-${e.dataset.toggle}`);

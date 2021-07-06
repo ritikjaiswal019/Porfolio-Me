@@ -245,6 +245,10 @@ p {
   .section-center {
     width: 95vw;
   }
+  .rotate:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
 }
 .center-img{
   text-align: -webkit-center;
@@ -470,10 +474,10 @@ header {
 {
   height: 80vh;
 } */
-#contact 
+/* #contact 
 {
   height: 80vh;
-}
+} */
 /* #projects 
 {
   height: 80vh;
@@ -545,11 +549,6 @@ footer p {
   float: right;
   animation: rotar 10s infinite linear;
   transform-style: preserve-3d;
-}
-
-.rotate:hover {
-/*   animation-play-state: paused; */
-  cursor: pointer;
 }
 
 .rotate .card {
@@ -634,3 +633,14 @@ footer p {
   width: 70%;
   min-width: 300px;
 } 
+
+.contact-section .col-md-6:first-child{
+  border-right: rgba(34, 34, 34, 0.5) solid 0.1px;
+}
+.contact-section .col-md-6 .form-control{
+  border: none;
+  background-color: transparent;
+}
+.contact-section .col-md-6 .form-control input, .contact-section .col-md-6 .form-control textarea{
+  border: rgba(34, 34, 34, 0.5) solid 0.1px;
+}
