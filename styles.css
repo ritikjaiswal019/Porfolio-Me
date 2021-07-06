@@ -634,8 +634,10 @@ footer p {
   min-width: 300px;
 } 
 
-.contact-section .col-md-6:first-child{
-  border-right: rgba(34, 34, 34, 0.5) solid 0.1px;
+@media (min-width:768px){
+  .contact-section .col-md-6:first-child{
+    border-right: rgba(34, 34, 34, 0.5) solid 0.1px;
+  }
 }
 .contact-section .col-md-6 .form-control{
   border: none;
