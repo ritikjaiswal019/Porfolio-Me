@@ -1,5 +1,5 @@
 # Porfolio-Me
 
-Status : Ongoing 
+This is my Portofolio Website
 
 https://ritikjaiswal019.github.io/Porfolio-Me/
